@@ -137,13 +137,11 @@
     <ClCompile Include="libwdi_tool.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\external\libwdi\libwdi\.msvc\libwdi_static.vcxproj">
-      <Project>{9aa0e745-1a0a-4700-8ecb-6a6de9dbf8b9}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\external\libwdi\libwdi\libwdi.h" />
     <ClInclude Include="config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\external\libwdi\x64\Release\lib\libwdi.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
